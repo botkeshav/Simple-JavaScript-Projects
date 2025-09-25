@@ -1,0 +1,133 @@
+*{
+   padding :0;
+    margin: 0;
+    font-family: 'Popins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #222;
+}
+.container
+{
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color:#fff;
+    position: fixed;
+    top: 150px;
+    left: 550px;
+    border-radius: 15px;
+}
+.searchbox
+{
+    height: 90px;
+    /* background-color: lightsteelblue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+input {
+    height: 40px;
+    width: 225px;
+    border-radius: 45px;
+    border: 1px solid #ccc;   /* optional, looks clean */
+    outline: none;            /* remove default focus border */
+    padding: 0 15px;          /* space on left & right */
+    box-sizing: border-box;   /* ensures width includes padding */
+}
+
+
+.search-btn {
+  display: flex;                 /* center contents */
+  align-items: center;           
+  justify-content: center;       
+  width: 40px;                   /* button size */
+  height: 40px;
+  border-radius: 50%;            /* makes it a circle */
+  background-color: #e0f7fa;     /* light background */
+  cursor: pointer;               /* hover cursor */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+
+.searchimg {
+  width: 50%;      /* scale relative to circle */
+  height: 50%;
+  object-fit: contain;
+}
+
+.w-span
+{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: white; */
+    /* position: fixed; */
+    left: 670px;
+
+}
+.w-img
+{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+.weather
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.space
+{
+    height: 50px;
+}
+
+.info
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.hum-img-span
+{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+
+}
+.hum-img
+{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
+.wind-img-span
+{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.wind-img
+{
+    height: 75%;
+    width: 75%;
+    object-fit: contain;
+}
