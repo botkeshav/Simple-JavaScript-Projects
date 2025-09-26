@@ -1,0 +1,87 @@
+*{
+   padding :0;
+    margin: 0;
+    font-family: 'Popins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+
+.container
+{
+    height: 500px;
+    width: 400px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    color:#fff;
+    position: fixed; 
+    top: 150px;
+    left: 550px;
+    position: relative;
+    /* border-radius: 15px; */
+}
+
+/* .img-con
+{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: 50%; 
+    border: 5px black;
+}
+
+.mus-img
+{
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+} */
+
+
+.img-con{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    /* border: 5px solid black; */
+    overflow: hidden; /* clip the image inside the circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 18%;
+    top: 8%;
+    
+}
+
+.mus-img {
+    height: 75%;
+    width: 75%;
+    object-fit: cover; /* fills the circle nicely */
+    border-radius: 50%; /* ensures image itself is circular */
+}
+
+.loading-bar
+{
+    height: 5px;
+    width: 300px;
+    background-color: pink;
+    position: absolute;
+    top: 74%;   
+    left: 13%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+
+.doted{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: black;
+
+}
+/* .controls
+{
+
+} */
