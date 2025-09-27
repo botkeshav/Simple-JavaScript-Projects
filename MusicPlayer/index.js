@@ -1,4 +1,4 @@
-console.log("Hello Bsdk")
+
 
 const audio = document.querySelector(".music");
 const playBtn = document.getElementById("play");
@@ -71,6 +71,13 @@ audio.addEventListener("timeupdate", () => {
   const newLeft = (progressPercent / 100) * (barWidth - dotWidth);
 
   progressDot.style.transform = `translateX(${newLeft}px)`;
+
+  if(progressPercent === 100)
+  {
+    playBtn.querySelector("img").src = "./icons/play_arrow.svg";
+
+  }
+
 });
 
 
@@ -83,7 +90,9 @@ bar.addEventListener("click", (e) => {
   const newTime = percent * audio.duration;
 
   audio.currentTime = newTime;
+  
 });
+
 
 // document.addEventListener('keydown' function(){
 //     if()
