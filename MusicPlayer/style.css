@@ -81,7 +81,69 @@ body{
     background-color: black;
 
 }
-/* .controls
+.details
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 290px;
+    left: 155px;
+    gap: 4px;
+}
 
-} */
+
+audio{
+    display: none;
+}
+.controls
+{
+    height: 110px;
+    /* width: 100vh; */
+    width: 100%;
+    position: absolute;
+    top: 390px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
+
+.control-btn{
+
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-shrink: 0; prevents flex resizing */
+    transition: all 0.3s ease; 
+    /* smooth hover */
+}
+
+
+#forward,#backward{
+    margin-top: 32px;
+    background: white;
+    width: 50px;
+    height: 50px;
+}
+
+#play{
+background: pink;
+width: 70px;
+height: 70px;
+}
+
+.ctrl-btn
+{
+    height: 35px;
+}
+
+.control-btn:hover
+{
+    transform: scale(1.2); /* grows but doesn’t push siblings */
+}

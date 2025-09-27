@@ -9,16 +9,36 @@
 <body>
     <div class="container">
         <div class="img-con">
-            <img src="468-thumbnail.png" alt="MusicImg" class="mus-img">
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/cd/Kenshi_Yonezu_-_Iris_Out.png" alt="MusicImg" class="mus-img">
         </div>
 
         <div class="loading-bar">
             <div class="doted"></div>
         </div>
+        <div class="details">
+            <h3 class="song-name">IRIS OUT</h3>
+            <!-- <h3 class="singer">Mohini</h3> -->
+             <p class="singer"> Kenshi Yonezu</p>
+        </div>
+        
+        <audio class="music" controls>
+            <source src="IRIS OUT.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
 
         <div class="controls">
             
+            <div id="forward" class="control-btn">
+                <img src="./icons/arrow_left.svg" alt="button" class="ctrl-btn">
+            </div>
+            <div id="play" class="control-btn">
+                <img src="./icons/play_arrow.svg" alt="button" class="ctrl-btn">
 
+            </div>
+            <div id="backward" class="control-btn">
+                <img src="./icons/arrow_right.svg" alt="button" class="ctrl-btn">
+            </div>
 
 
         </div>
@@ -26,6 +46,8 @@
 
     </div>
 
+    <script src="index.js"></script>
 
 </body>
+
 </html>
