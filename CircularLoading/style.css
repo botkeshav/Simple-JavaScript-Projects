@@ -1,0 +1,45 @@
+*{
+   padding :0;
+    margin: 0;
+    font-family: 'Popins',sans-serif;
+    box-sizing: border-box;
+}
+
+.container
+{
+    background-color: rgb(201, 205, 209);
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 550px;
+    top: 100px;
+}
+
+
+.outer
+{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    position: relative;
+    
+    top: 150px;
+    left: 150px;
+    border-radius: 50%;
+}
+
+
+.inner 
+{
+    
+
+
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    /* width: 10px; */
+    left: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
